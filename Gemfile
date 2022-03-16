@@ -72,4 +72,6 @@ group :test do
 end
 
 gem 'webpacker', '~> 3.5'
+gem 'activeadmin'
+gem 'devise'
 
