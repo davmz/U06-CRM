@@ -1,0 +1,41 @@
+<div>
+  <h2>
+    <% if show_link %>
+      <%= link_to customer.full_name, customer %>
+    <% else %>
+      <%= customer.full_name%>
+    <% end %>
+  </h2>
+
+  <% if customer.image.present? %>
+    <div>
+      <figure>
+        <%= image_tag customer.image %>
+      </figure>
+    </div>
+  <% end %>
+
+  <div>
+    <div>
+      <p>
+        <strong>Phone Number#: </strong>
+        <%= customer.phone_number %>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <strong>Email Address: </strong>
+        <%= customer.email_address %>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <strong>Notes: </strong>
+        <%= customer.notes %>
+      </p>
+    </div>
+  </div>
+</div>
+
